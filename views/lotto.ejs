@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<title>로또 번호 추출기</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<script>
+	$('document').ready(function() {
+		$('#refresh').click(function() {
+			location.replace('/lotto'); // alert('OK');
+		});
+		var dt = new Date();
+		var today = dt.getFullYear() + '년 ';
+		today += dt.getMonth() + 1 + '월 ';
+		today += dt.getDate() + '일 ';
+
+		today += dt.getHours() + '시 ';
+		today += dt.getMinutes() + '분 ';
+		today += dt.getSeconds() + '초 ';
+		// $('#date').text(today);
+	})
+</script>
+</head>
+
+<body>
+<div class='container-fluid '>
+	<h2>로또번호 추출기</h2>
+	<hr />
+	<p id=date>생성일시 : <%= today %>
+	<ul class='pagination'>
+		<% lottos.forEach(function(lotto,index){ %>
+		<li><a href='#'><%= lotto %></a></li> <% }) %>
+		<li><button id="refresh" type="button" class="btn btn-warning">새로고침</button></li>
+	</ul>
+	<hr />
+	<p id=userid>remote ip address : <%= userip %>
+	<hr />
+
+	<% if(getno != '') { %>
+	<h4>이미 추첨된 적이 있는 번호 입니다 ^^</h4>
+	<p>당첨 회차  : <%= getno %>
+	<p>당첨 일자  : <%= getdate %> 
+	
+	<hr />
+	<% } %>
+
+
+	<p>여기에서 생성된 로또 번호는 실제 번호와 아무런 관련이 없으며
+	<p>번호에 따른 책임은 구매자 본인에게 있습니다
+	<hr />
+	<p>create by callor@callor.com
+</div>
+</body>
+</html>
