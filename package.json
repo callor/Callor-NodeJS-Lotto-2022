@@ -1,26 +1,25 @@
 {
-    "name": "node-lotto",
-    "version": "0.0.0",
-    "private": true,
-    "scripts": {
-        "start": "node ./bin/www"
-    },
-    "dependencies": {
-        "auto-sni": "^2.3.2",
-        "cookie-parser": "*",
-        "debug": "*",
-        "express": "^4.17.1",
-        "express-session": "^1.17.2",
-        "greenlock-express": "^2.7.6",
-        "https": "^1.0.0",
-        "jquery": "^3.6.0",
-        "le-acme-core": "^2.1.4",
-        "moment": "^2.29.1",
-        "mongoose": "^6.0.4",
-        "morgan": "^1.10.0",
-        "node-redis": "^0.1.7",
-        "nodemon": "^2.0.12",
-        "pug": "^3.0.2",
-        "serve-favicon": "*"
-    }
+  "name": "node-lotto",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "auto-sni": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "express-session": "*",
+    "greenlock-express": "^4.0.3",
+    "jquery": "*",
+    "le-acme-core": "*",
+    "moment": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "node-redis": "*",
+    "pug": "*",
+    "serve-favicon": "*"
+  }
 }

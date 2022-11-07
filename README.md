@@ -1,22 +1,40 @@
 # callor Lotto
 
 ### 나눔로또 1회 - 754회 번호 등록
+
 ### 기존 당첨번호가 있을 경우 메시지 표시
 
 ## Usage
 
-
-
 ## Developing
 
-* edit by Callor
+- edit by Callor
 
 ### Tools
 
-* node js
-* express
-* mongoose
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
+- node js
+- express
+- mongoose
+  Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
+  ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))
 
 Nodeclipse is free open-source project that grows with your contributions.
+
+### dependency
+
+```
+npm install -save auto-sni
+npm install -save cookie-parser
+npm install -save debug
+npm install -save express
+npm install -save express-session
+npm install -save greenlock-express
+npm install -save jquery
+npm install -save le-acme-core
+npm install -save moment
+npm install -save mongoose
+npm install -save morgan
+npm install -save node-redis
+npm install -save pug
+npm install -save serve-favico
+```
