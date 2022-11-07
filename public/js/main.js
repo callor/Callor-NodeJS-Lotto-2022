@@ -1,3 +1,3 @@
-document.addEventListener("toutouchend", (e) => {
-  alert("Tourch End");
+document.addEventListener("touchend", (e) => {
+  document.location.href = document.location.href;
 });
