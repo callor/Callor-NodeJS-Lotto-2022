@@ -71,7 +71,7 @@ article.w3-container {
 
 @media screen and (max-width: 1500px) {
   header {
-    height: 20%;
+    height: 30%;
     background-size: 100% 120%;
     background-position: 70% 80%;
   }
@@ -87,7 +87,7 @@ article.w3-container {
   }
 
   article.message p {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
 }
 
