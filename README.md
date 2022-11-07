@@ -5,6 +5,7 @@
 ### Lotto 2022
 
 - module type 으로 Refactory
+- vsCode editing
 
 ## Developing
 
@@ -14,6 +15,7 @@
 
 - node js
 - express
+- mongoose
 - mongoose
 
 ### deprecate
