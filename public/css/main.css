@@ -20,6 +20,7 @@ header {
   background-image: url("/images/title.png");
   background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }

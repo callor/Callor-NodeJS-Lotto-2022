@@ -7,6 +7,7 @@ import http from "http";
 const debug = createDebug("callor-lotto:server");
 
 const httpOption = {
+  host: "localhost",
   port: 12200,
 };
 
@@ -15,7 +16,10 @@ httpServer.listen(httpOption, "0.0.0.0");
 
 httpServer.on("error", (error) => {
   if (error?.syscall !== "listen") throw error;
-  const bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
+  const bind =
+    typeof httpOption.port === "string"
+      ? "Pipe : " + httpOption.port
+      : "Port : " + httpOption.port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
