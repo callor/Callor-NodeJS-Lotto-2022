@@ -7,7 +7,6 @@ import http from "http";
 const debug = createDebug("callor-lotto:server");
 
 const httpOption = {
-  host: "localhost",
   port: 12200,
 };
 
