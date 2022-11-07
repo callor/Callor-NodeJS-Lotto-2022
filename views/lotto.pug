@@ -5,9 +5,9 @@ block content
 			if lottos
 				each lotto,index in lottos
 					li #{lotto}
-		article.w3-container
+		article.w3-container.message
 			if getno != ''
-				h4 이미 추첨된 적이 있는 번호 입니다 ^^
+				h2 이미 추첨된 적이 있는 번호 입니다 ^^
 				p 당첨 회차  : #{getno}
 				p 당첨 일자  : #{getdate} 
 

@@ -13,6 +13,8 @@ body {
   padding: 12px 16px !important;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -33,6 +35,7 @@ footer {
 
 section.w3-container {
   border: 1px solid #bbb;
+  flex: 1;
 }
 
 ul.lottos.body {
@@ -65,6 +68,53 @@ article.w3-container {
   margin: 10px auto;
 }
 
+@media screen and (max-width: 1500px) {
+  header {
+    height: 20%;
+    background-size: 100% 120%;
+    background-position: 70% 80%;
+  }
+  ul.lottos.body li {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    line-height: 100px;
+  }
+  article.w3-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  article.message p {
+    font-size: 30px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 20%;
+    background-size: 150% 100%;
+    background-position: 70% 80%;
+  }
+  ul.lottos.body {
+    padding: 8px 0.5em;
+  }
+
+  ul.lottos.body li {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  article.w3-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+  article.message p {
+    font-size: 25px !important;
+  }
+}
+
 @media screen and (max-width: 400px) {
   header {
     height: 20%;
@@ -72,7 +122,7 @@ article.w3-container {
     background-position: 70% 80%;
   }
   ul.lottos.body li {
-    width: 500%;
+    width: 40px;
     height: 40px;
     font-size: 20px;
     line-height: 40px;
@@ -80,5 +130,9 @@ article.w3-container {
   article.w3-container {
     width: 90%;
     margin: 10px auto;
+  }
+
+  article.message p {
+    font-size: 20px !important;
   }
 }
