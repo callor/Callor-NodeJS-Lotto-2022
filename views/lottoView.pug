@@ -1,0 +1,47 @@
+include include/head.pug
+script.
+	$('document').ready(function() {
+		$('#refresh').click(function() {
+			location.replace('/'); // alert('OK');
+		});
+		var dt = new Date();
+		var today = dt.getFullYear() + '년 ';
+		today += dt.getMonth() + 1 + '월 ';
+		today += dt.getDate() + '일 ';
+
+		today += dt.getHours() + '시 ';
+		today += dt.getMinutes() + '분 ';
+		today += dt.getSeconds() + '초 ';
+		// $('#date').text(today);
+	})
+	
+style.
+	a {
+		text-decoration: none;
+	}
+	
+body.w3-margin.w3-container
+section
+	p #{lottos.length}
+	table.w3-table-all.w3-hoverable
+		tr.w3-border
+			th 회차
+			th 년월일
+			th 1
+			th 2
+			th 3
+			th 4
+			th 5
+			th 6
+			th 보너스
+		each lotto, index in lottos
+			tr.w3-border
+				td #{lotto.sno}
+				td #{lotto.sdate}
+				td #{lotto.no1}
+				td #{lotto.no2}
+				td #{lotto.no3}
+				td #{lotto.no4}
+				td #{lotto.no5}
+				td #{lotto.no6}
+				td #{lotto.bonus}
