@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./bin/www.js",
-    "pm2": "pm2 start ./bin/www.js --name lotto --watch"
+    "pm2": "pm2 start ./bin/www.js --name lotto --watch",
+    "pm2:delete": "pm2 delete lotto"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",

@@ -37,6 +37,7 @@ footer {
 section.w3-container {
   border: 1px solid #bbb;
   flex: 1;
+  overflow: hidden;
 }
 
 ul.lottos.body {
@@ -67,6 +68,7 @@ ul.lottos.body li {
 article.w3-container {
   width: 60%;
   margin: 10px auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1500px) {
@@ -78,7 +80,7 @@ article.w3-container {
   ul.lottos.body li {
     width: 100px;
     height: 100px;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 100px;
   }
   article.w3-container {
