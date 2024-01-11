@@ -7,12 +7,11 @@ import http from "http";
 const debug = createDebug("callor-lotto:server");
 
 const httpOption = {
-  host: "localhost",
   port: 12200,
 };
 
 const httpServer = http.createServer(app);
-httpServer.listen(httpOption, "0.0.0.0");
+httpServer.listen(httpOption);
 
 httpServer.on("error", (error) => {
   if (error?.syscall !== "listen") throw error;
