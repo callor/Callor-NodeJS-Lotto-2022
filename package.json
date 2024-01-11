@@ -13,8 +13,8 @@
     "debug": "^4.3.4",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "moment": "^2.29.4",
-    "mongoose": "^6.7.1",
+    "moment": "^2.30.1",
+    "mongoose": "^8.0.4",
     "morgan": "^1.10.0",
     "node-redis": "^0.1.7",
     "pug": "^3.0.2"
